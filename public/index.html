@@ -4,19 +4,31 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Modelo</title>
+        <title>Pass Generator</title>
     </head>
 
     <body>
         <section class="container">
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Repellendus nisi explicabo saepe voluptatibus consequuntur et
-                corporis maxime quos, doloribus vitae voluptatum quisquam
-                necessitatibus pariatur veritatis exercitationem beatae officiis
-                suscipit Ea!
-            </p>
+            <h1>Password Generator</h1>
+            <div class="password-generated"></div>
+
+            Chars quantity
+            <input
+                type="number"
+                class="quantity"
+                min="1"
+                max="30"
+                value="10"
+            /><br />
+            Uppercase
+            <input type="checkbox" class="uppercase" checked /><br />
+            Lowercase
+            <input type="checkbox" class="lowercase" /><br />
+            Numbers
+            <input type="checkbox" class="numbers" /><br />
+            Symbols
+            <input type="checkbox" class="symbols" /><br />
+            <button class="generate-password">Generate</button>
         </section>
 
         <script src="./assets/js/bundle.js"></script>
